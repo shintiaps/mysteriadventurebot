@@ -309,14 +309,16 @@ def game_utama():
     
     return True
 
-# LOOPING: Main lagi?
+
+# ===== MAIN LOOP =====
 def main_loop():
     while True:
         if game_utama():
             time.sleep(1)
-            lanjut = input("\n🎮 Main lagi? (y/n): ").lower()
+            lanjut = input("\n🎮 Mau mencoba petualangan baru? (y/n): ").lower()
             if lanjut != 'y':
-                efek_teks("\n👋 Terima kasih telah bermain! Sampai jumpa lagi di Kerajaan Misteri Digital.", jeda=0.02)
+                efek_teks("\n👋 Terima kasih telah bermain Petualangan Surtsey!", jeda=0.02)
+                efek_teks("Sampai jumpa di petualangan berikutnya!", jeda=0.02)
                 break
         else:
             break
